@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --watch --out-file dist/bundle.js --source-maps"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
@@ -15,8 +15,11 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1"
+    "babel-preset-react": "^6.24.1",
+    "bable-loader": "0.0.1-security",
+    "webpack": "^3.5.5"
   }
 }
