@@ -4,7 +4,8 @@ const config = {
     entry: './src/index.jsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/dist/'
     },
     module: {
         rules: [{
@@ -13,7 +14,13 @@ const config = {
             exclude: path.resolve(__dirname, 'node_modules')
         }]
     },
-    devtool: 'inline-source-map'
+    devtool: 'inline-source-map',
+    devServer: {
+        publicPath: '/dist/',
+        open: true,
+        compress: true,
+        port: 9000
+    }
 };
 
 module.exports = config;
