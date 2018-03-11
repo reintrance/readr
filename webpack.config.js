@@ -11,7 +11,7 @@ const config = {
         rules: [{
             test: /.\jsx?$/,
             use: 'babel-loader',
-            exclude: path.resolve(__dirname, 'node_modules')
+            exclude: /node_modules/
         }]
     },
     devtool: 'inline-source-map',
